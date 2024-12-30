@@ -45,14 +45,14 @@ pip install gev_analysis
 ### Data Preparation
 
 ```python
-from data_handler import DataHandler
+from gev_analysis import DataHandler
 handler = DataHandler(symbol="CDR.WA", start="2020-01-01", end="2021-03-31")
 ```
 
 ### Normality and VaR Analysis
 
 ```python
-from normality_var import NormalityVaR
+from gev_analysis import NormalityVaR
 normality = NormalityVaR(symbol="CDR.WA", start="2020-01-01", end="2021-03-31", alpha=0.01)
 normality.plot_results()  # Plot empirical and normal VaR comparison
 normality.distribution_summary()  # Summary of fitted distributions
@@ -73,7 +73,7 @@ gev_analysis.summary()
 ### GPD Analysis
 
 ```python
-from gpd_analysis import GPDExtremeValueAnalysis
+from gev_analysis import GPDExtremeValueAnalysis
 gpd_analysis = GPDExtremeValueAnalysis(symbol="CDR.WA", start="2020-01-01", end="2021-03-31", alpha_input=0.01, threshold=-0.058) 
 gpd_analysis.plot_minima()  # Visualize exceedances
 gpd_analysis.stability(threshold_list=[-0.02, -0.04, -0.06])  # Stability analysis for thresholds
