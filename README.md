@@ -74,9 +74,10 @@ gev_analysis.summary()
 
 ```python
 from gev_analysis import GPDExtremeValueAnalysis
+import numpy as np
 gpd_analysis = GPDExtremeValueAnalysis(symbol="CDR.WA", start="2020-01-01", end="2021-03-31", alpha_input=0.01, threshold=-0.058) 
 gpd_analysis.plot_minima()  # Visualize exceedances
-gpd_analysis.stability(threshold_list=[-0.02, -0.04, -0.06])  # Stability analysis for thresholds
+gpd_analysis.stability(threshold_list=np.arange(-0.025, -0.12, -0.001))  # Stability analysis for thresholds
 gpd_analysis.plot_distribution() # Histogram with fitted GPD PDF
 gpd_analysis.summary()   
 ```
