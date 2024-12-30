@@ -93,7 +93,7 @@ gpd_analysis.summary()
 
 ## References
 
-- **Documentation**: [Extreme Value Theory Basics](https://example.com)
+- **Presentation with examples**: [Extreme Value Theory Basics](https://github.com/Siatek98/Extreme-Value-Theory/blob/main/EVT_presentation.pdf)
 - **Email for Queries**: [tomeksiat@gmail.com](mailto:tomeksiat@gmail.com)
 
 ---
